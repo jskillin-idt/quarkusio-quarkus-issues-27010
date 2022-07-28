@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.quarkus'
+//    id 'io.quarkus'
 }
 
 repositories {
@@ -32,4 +32,8 @@ compileJava {
 
 compileTestJava {
     options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
 }
